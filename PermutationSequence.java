@@ -1,3 +1,4 @@
+//Given n and k, return the kth permutation sequence.
 import java.lang.*;
 import java.util.*;
 
