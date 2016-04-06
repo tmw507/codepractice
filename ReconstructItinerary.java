@@ -24,14 +24,17 @@ public class Solution {
         if(neighbors != null){
             for(int i=0; i<neighbors.size(); i++){
                  String n = neighbors.get(i);
+                 //equivalently mark the ith' node as visited
                  neighbors.remove(i);
-                 
+                 //go deep to recursively explore the valid path
                  if(dfs(graph,n, res, num) == true){
                      return true;
                  }
+                 //backtracking by add the node to ith' position
                  neighbors.add(i,n);
             }
         }
+        //backtracking by removing the last added node in res at some level of dfs failed to find a valid solution.
         res.removeLast();
         return false;
     }
