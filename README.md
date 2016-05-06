@@ -1,6 +1,6 @@
 # codepractice
 1) Topological sorting, e.g. course schedule problem.
-The course prerequisites between courses form edges between course node. Finding a possible schedule of courses could be solved by topological sorting technique. Potentially, there are might be more than one graph in the adject list. Considering exploring the graph start from course num 0 tend to run into a bug since it covered a partial of the whole graph. Therefore, we need
+The course prerequisites between courses form edges between course node. Finding a possible schedule of courses could be solved by topological sorting technique. Potentially, there are might be more than one graph in the adject list. Considering exploring the graph start from course num 0 tend to run into a bug since it covers a partial of the whole graph. Therefore, we need
 
 <code>
 for(int i=0; i\<numOfCourses; i++){
