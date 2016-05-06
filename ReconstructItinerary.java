@@ -17,6 +17,7 @@ public class Solution {
         return res;
     }
     
+    // a valid path should cover all graph nodes
     private boolean dfs(HashMap<String,ArrayList<String>> graph, String start, LinkedList<String> res, int num ){
         ArrayList<String> neighbors = graph.get(start);
         res.add(start);
