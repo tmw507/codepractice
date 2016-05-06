@@ -10,9 +10,9 @@ for(int i=0; i &lt; numOfCourses; i++){
 </code>
 </pre>
 
-2) very common to see a combination of recursion/dfs with backtracking algorithm.
-Backtracking is usedfor finding all (or some) solutions to some computational problems. It usually builds candidates to the solution
-incrementally in a principle way such as DFS and abandons each partial candidate c ("backtrack") as soon as it determines that c cannot 
+2) It's very common to see a combination of recursion/dfs with backtracking algorithm.
+Backtracking is used for finding all (or some) solutions to some computational problems. It usually builds candidates to the solution
+incrementally in a principle way such as DFS and drops a partial candidate c ("backtrack") as soon as it finds that c cannot 
 be a valid result in the solutions. For example, the reconstruct itinerary problem.
 <a href="https://github.com/tmw507/codepractice/blob/master/ReconstructItinerary.java"> ReconstructItinerary </a>
 
