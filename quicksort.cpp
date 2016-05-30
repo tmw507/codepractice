@@ -103,7 +103,7 @@ int kSelect(int A[], int si, int ei, int k){
     int pi = partition(A, si, ei,r);
     if(pi == k) return A[k];
     if(pi<k){
-       return kSelect(A,pi+1, ei,k);
+       return kSelect(A,pi+1, ei, k);
     }else{// pi>k
        return kSelect(A,si, pi-1, k);    
     }
